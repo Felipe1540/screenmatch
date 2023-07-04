@@ -1,5 +1,6 @@
 package br.com.alura.screenmatch.domain.filme;
 
+import br.com.alura.screenmatch.filme.DadosAlteracaoFilmes;
 import jakarta.persistence.*;
 
 @Entity
@@ -18,6 +19,10 @@ public class Filme {
         this.duracaoEmMinutos = dados.duracao();;
         this.anoLancamento = dados.ano();
         this.genero = dados.genero();
+    }
+
+    public Filme () {
+
     }
 
     public Long getId() {
@@ -51,4 +56,11 @@ public class Filme {
     }
 
 
+    // metodo criado para update/edição dos dados
+    public void atualizaDados(DadosAlteracaoFilmes dados) {
+        this.nome = dados.nome();
+        this.duracaoEmMinutos = dados.duracao();
+        this.anoLancamento = dados.ano();
+        this.genero = dados.genero();
+    }
 }
