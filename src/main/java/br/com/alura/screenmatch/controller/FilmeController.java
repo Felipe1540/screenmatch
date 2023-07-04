@@ -3,15 +3,12 @@ package br.com.alura.screenmatch.controller;
 import br.com.alura.screenmatch.domain.filme.DadosCadastroFilmes;
 import br.com.alura.screenmatch.domain.filme.Filme;
 import br.com.alura.screenmatch.domain.filme.FilmeRepository;
-import br.com.alura.screenmatch.filme.DadosAlteracaoFilmes;
+import br.com.alura.screenmatch.domain.filme.DadosAlteracaoFilmes;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 @RequestMapping("/filmes")

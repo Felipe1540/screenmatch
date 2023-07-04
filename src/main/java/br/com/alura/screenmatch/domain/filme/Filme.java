@@ -1,6 +1,5 @@
 package br.com.alura.screenmatch.domain.filme;
 
-import br.com.alura.screenmatch.filme.DadosAlteracaoFilmes;
 import jakarta.persistence.*;
 
 @Entity
